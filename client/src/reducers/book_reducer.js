@@ -1,0 +1,34 @@
+/**
+ * Created by nilkanthagurung on 3/5/18.
+ */
+export default function(state={}, action) {
+    switch(action.type) {
+        case 'GET_BOOKS':
+            return {...state, list: action.payload}
+        case 'GET_BOOK':
+            return {...state, book: action.payload}
+        case 'UPDATE_BOOK':
+            return {...state,
+                    updatebook: action.payload.success,
+                    book: action.payload.doc
+            }
+        case 'GET_BOOK_W_REVIEWER':
+            return {...state, book: action.payload.book, reviewer: action.payload.reviewer}
+        case 'clearBookWithReviewer':
+            return {...state, book: {}, reviewer: {}}
+        case 'ADD_BOOK':
+            return {...state, newbook: action.payload}
+        case 'DELETE_BOOK':
+            return {...state, postDeleted: action.payload}
+        case 'CLEAR_NEWBOOK':
+            return {...state, newbook: action.payload}
+        case 'CLEAR_BOOK':
+            return {...state,
+                postDeleted: action.payload.postDeleted,
+                updatebook: action.payload.updatebook,
+                book: action.payload.book
+            }
+        default:
+            return state;
+    }
+}
