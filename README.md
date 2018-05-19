@@ -1,4 +1,4 @@
-# BookShelf MERN 
+# BookShelf MERN  App
 BookShelf app built with MongoDB, Express, React and Node (MERN stack) 
 
 ### Installing
@@ -45,3 +45,14 @@ And thats it!! Hopefully it will run.
 * [Bcrypt](https://github.com/dcodeIO/bcrypt.js/blob/master/README.md) - Password hashing function
 * [Mongoose](http://mongoosejs.com/) - Mongodb object modeling for Node.js
 
+ScreenShots of App
+
+
+Login Section
+![](img/login.png )
+
+Add Review Section
+![](img/add-review.png)
+
+Profile
+![](img/profile.png)
